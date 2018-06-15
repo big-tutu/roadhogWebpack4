@@ -25,53 +25,6 @@ module.exports = {
     open: false,
     openPage: 'midway/',
     hot: true,
-    proxy: {
-
-      '/midway/api/dgm': {
-        target: 'http://10.101.54.17:9998/',
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/dw/': {
-        target: 'http://10.101.52.42:8082/',
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/servicecomponents': {
-        target: 'http://10.101.54.17:8089/',
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/em': {
-        target: 'http://10.101.52.60:8090/',
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/ironman/': {
-        target: 'http://bds.17usoft.com/',
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/jarvis/': {
-        target: 'http://10.101.54.75:8090/',
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/dataengine/': {
-        target: 'http://bds.t.17usoft.com/',
-        changeOrigin: true,
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/datalineagerest/': {
-        target: 'http://bds.17usoft.com/',
-        changeOrigin: true,
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/dgm/dgcService': {
-        target: 'http://10.101.54.17:9998/',
-        changeOrigin: true,
-        pathRewrite: { '^/midway/api': '' },
-      },
-      '/midway/api/issue': {
-        target: 'http://10.101.52.60:9999/',
-        changeOrigin: true,
-        pathRewrite: { '^/midway/api': '' },
-      },
-    },
     overlay: {
       errors: true,
     },
