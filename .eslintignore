@@ -1,0 +1,11 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+# Ignore built files except build/index.js
+
+src/components/ZTree/js/*
+
+src/components/Datatables/*
+
+src/components/Go/*
+
+devServer.mock.js
